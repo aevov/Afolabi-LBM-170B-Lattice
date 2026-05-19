@@ -61,5 +61,6 @@ We welcome peer review, but we enforce strict architectural provenance. We chall
 **License:** CC BY-NC-ND 4.0  
 **Ecosystem Root:** [Link to Aevov-NeuroSymbolic-NeuroResonance-root]  
 **Live Substrate Interface:** sentiencecloud.one  
+**Academic References:** [REFERENCES.md](./REFERENCES.md)  
 
 #NeuralComputers #LatticeComputing #LBM170B #AUF #SovereignTech #DualBrain #IsomorphicIntelligence
