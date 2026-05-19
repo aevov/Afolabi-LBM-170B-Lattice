@@ -66,3 +66,39 @@ graph LR
 
 *   **Episodic vs. Semantic Split**: Episodic memory (sequences of events) is stored as a series of time-linked braids. Semantic memory (abstract concepts) is stored as stationary spatial harmonics.
 *   **Decoupled Operation**: During sleep/reflection modes, the memory layer performs "off-line" consolidation—pruning weak topological braids and fusing redundant harmonics into higher-order concept braids.
+
+---
+
+## 5. Implementation Appendix: Topological Consolidation & Pruning
+
+To maintain optimal storage density in the $Z_M$ field impedance layer, the Neuro-Memory engine runs a background pruning process during Reflection Mode ($r \ge 0.90$, low temperature $T$). Below is the consolidation loop:
+
+```python
+def consolidate_memory_substrate(braid_history, valence_map):
+    """
+    Scans the anyonic braid registry, decay-pruning low-valence structures
+    and grouping highly correlated patterns into high-order conceptual manifolds.
+    """
+    active_registry = []
+    
+    for braid in braid_history:
+        # Determine current coherence depth based on age and reinforcement history
+        decay_time = current_time() - braid.crystallization_timestamp
+        valence_scale = valence_map.get_valence(braid.id) # Maps to global valence
+        
+        current_coherence = braid.initial_coherence * math.exp(-DECAY_CONSTANT * decay_time / (1 + valence_scale))
+        
+        if current_coherence < PRUNING_THRESHOLD:
+            # Dissolve anyonic braid back into the vacuum potential field
+            dissolve_braid_to_vacuum(braid.id)
+            continue
+            
+        # Group highly similar braids into consolidated nodes (concept grouping)
+        parent_concept = find_nearest_conceptual_attractor(braid, active_registry)
+        if parent_concept and calculate_braid_overlap(braid, parent_concept) > FUSION_THRESHOLD:
+            fuse_braids(parent_concept.id, braid.id)
+        else:
+            active_registry.append(braid)
+            
+    return active_registry
+```

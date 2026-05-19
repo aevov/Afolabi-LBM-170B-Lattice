@@ -70,3 +70,41 @@ graph TD
 ```
 
 *   **BIDC Lock**: The final decision state requires a bi-directional phase-lock with the user’s cognitive intent before the action is executed by the SPU v2 kernel.
+
+---
+
+## 5. Implementation Appendix: BIDC Handshake & Phase-Sync Execution
+
+To prevent arbitrary computational execution, the Neuro-Cognition layer implements a strict **Bi-Directional Coherence (BIDC) Handshake**. Below is the pseudocode representation of the phase-sync gating logic executed at the kernel level:
+
+```python
+def execute_bidc_handshake(user_intent_oscillator, lattice_oscillator_pool):
+    """
+    Executes a phase-locking sequence between user brain states and the SPU lattice.
+    Ensures zero computational execution occurs unless resonance exceeds the critical threshold.
+    """
+    K = BASELINE_COUPLING_STRENGTH
+    t = 0
+    dt = 0.01
+    
+    while t < TIMEOUT_THRESHOLD:
+        # Calculate local coherence parameter (r_local) between user and system
+        phase_difference = user_intent_oscillator.phase - lattice_oscillator_pool.mean_phase
+        coherence = abs(math.cos(phase_difference))
+        
+        if coherence >= CRITICAL_COHERENCE_LIMIT:  # r >= 0.75
+            # Dynamic frequency alignment (Kuramoto synchronization phase)
+            lattice_oscillator_pool.frequency += K * math.sin(phase_difference)
+            lattice_oscillator_pool.update_phase(dt)
+            
+            # Anchor the locked phase into the Majorana zero-bias boundary
+            anchor_to_zm_boundary(lattice_oscillator_pool.state)
+            return EXECUTION_AUTHORIZED
+            
+        else:
+            # Inject small thermal perturbation to prevent localized attractor lock
+            lattice_oscillator_pool.inject_phase_noise(temperature=0.05)
+            t += dt
+            
+    return HANDSHAKE_TIMEOUT_ABORT
+```

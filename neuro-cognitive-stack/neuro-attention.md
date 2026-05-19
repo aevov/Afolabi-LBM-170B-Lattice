@@ -66,3 +66,40 @@ graph TD
 
 *   **Top-Down Modulation**: The Neuro-Context layer feeds expectations back into the attention gating mechanism, allowing the system to actively search for specific topological patterns while ignoring expected background states.
 *   **Systemic Safety**: If global coherence drops below the baseline ($r < 0.4$), the attention layer triggers a structural reset to prevent chaotic feedback loops in the substrate.
+
+---
+
+## 5. Implementation Appendix: 3D Spatial Attention Mapping & Noise Filtering
+
+To run within the volumetric lattice, the attention engine maps energy distribution dynamically using a 3D Gaussian focus envelope. Below is the technical logic mapping this spatial salience filtration:
+
+```javascript
+/**
+ * Maps the 3D attention energy density field over the volumetric lattice coordinates.
+ * Dynamic noise suppression is applied to all nodes lying outside the focus radius.
+ */
+function updateSpatialAttentionMap(latticeNodes, targetX, targetY, targetZ, focusRadius) {
+    const minAttenuation = 0.05; // Maximum noise suppression
+    const scale = 2.0;          // Sharpness of attention boundary
+
+    latticeNodes.forEach(node => {
+        // Calculate Euclidean distance to attention center
+        const dx = node.x - targetX;
+        const dy = node.y - targetY;
+        const dz = node.z - targetZ;
+        const distanceSq = dx*dx + dy*dy + dz*dz;
+
+        // Compute 3D Gaussian attention coefficient
+        const coeff = Math.exp(-distanceSq / (2 * focusRadius * focusRadius * scale));
+
+        // Modulate node coupling strength (K_node) and apply threshold gating
+        if (coeff < minAttenuation) {
+            node.couplingStrength = 0.0; // Complete spatial isolation of noise
+            node.isFocused = false;
+        } else {
+            node.couplingStrength = coeff; // Localized amplification of signal
+            node.isFocused = true;
+        }
+    });
+}
+```
