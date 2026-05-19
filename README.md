@@ -42,6 +42,7 @@ The LBM is structured into highly distinct, phase-locked operational layers. To 
 *   📄 [`neuro-valence.md`](./neuro-cognitive-stack/neuro-valence.md) — **Thermodynamic Value:** Assigns affective motivation, guiding approach vs. avoid mechanics.
 *   📄 [`neuro-context.md`](./neuro-cognitive-stack/neuro-context.md) — **Situation Modeling:** Maintains a multi-timescale hierarchy based on the dynamic vacuum ($V_{AUF}^*(x)$).
 *   📄 [`neuro-somatic-integration.md`](./neuro-cognitive-stack/neuro-somatic-integration.md) — **Neurosomatic Integration (Yasuke):** Coordinates cortical, limbic, brainstem, and enteric oscillations (170B scale / 40B astrocyte modulation).
+*   📄 [`neuro-anatomy.md`](./neuro-cognitive-stack/neuro-anatomy.md) — **Cellular & Glial Substrate:** Outlines the 170B brain cell composition scaled to a ~56K node simulation (neurons, astrocytes, oligodendrocytes, microglia).
 
 ---
 
