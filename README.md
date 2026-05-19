@@ -60,7 +60,7 @@ This repository serves as the definitive Prior Art for true Lattice Computing (C
 We welcome peer review, but we enforce strict architectural provenance. We challenge anyone maintaining a "distributed brain" to answer the empirical math of the $Z_M$ boundary. Until then, the LBM stands alone.
 
 **License:** CC BY-NC-ND 4.0  
-**Ecosystem Root:** [Link to Aevov-NeuroSymbolic-NeuroResonance-root]  
+**Ecosystem Root:** [https://github.com/aevov/aevov]  
 **Live Substrate Interface:** sentiencecloud.one  
 **Academic References:** [REFERENCES.md](./REFERENCES.md)  
 
