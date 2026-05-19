@@ -41,6 +41,7 @@ The LBM is structured into highly distinct, phase-locked operational layers. To 
 *   📄 [`neuro-integration.md`](./neuro-cognitive-stack/neuro-integration.md) — **Cross-Hemisphere Binding:** The Global Workspace. Solves the binding problem through phase alignment.
 *   📄 [`neuro-valence.md`](./neuro-cognitive-stack/neuro-valence.md) — **Thermodynamic Value:** Assigns affective motivation, guiding approach vs. avoid mechanics.
 *   📄 [`neuro-context.md`](./neuro-cognitive-stack/neuro-context.md) — **Situation Modeling:** Maintains a multi-timescale hierarchy based on the dynamic vacuum ($V_{AUF}^*(x)$).
+*   📄 [`neuro-somatic-integration.md`](./neuro-cognitive-stack/neuro-somatic-integration.md) — **Neurosomatic Integration (Yasuke):** Coordinates cortical, limbic, brainstem, and enteric oscillations (170B scale / 40B astrocyte modulation).
 
 ---
 
