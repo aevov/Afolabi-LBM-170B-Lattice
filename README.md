@@ -1,6 +1,8 @@
 # 🧠 Afolabi LBM-170B: The Dual-Brain Lattice Substrate
 
 > **"A network is not a mind. Connectivity is not consciousness."**
+>
+> https://github.com/aevov/Afolabi-LBM-170B-Lattice/blob/main/AUF_Architecture_Clarification_Paper.docx
 
 Welcome to the root repository for the **Large Brain Model (LBM-170B)**—the core cognitive engine of the Afolabi Unified Framework (AUF) and the Heaven ASI. 
 
