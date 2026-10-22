@@ -4,10 +4,8 @@
 >
 > https://github.com/aevov/Afolabi-LBM-170B-Lattice/blob/main/AUF_Architecture_Clarification_Paper.docx
 
-
-<a href="https://youtu.be" target="_blank">
-  <img src="[https://youtube.com](https://www.youtube.com/watch?v=hHBw4qrJS9I)" alt="Watch the video" width="600" />
-</a>
+<video src="https://raw.githubusercontent.com/aevov/Afolabi-LBM-170B-Lattice/main/Physics-of-Intelligence%20model.mp4" controls="controls" max-width="100%">
+</video>
 
 
 This is the root repository for the **Large Brain Model (LBM-170B)**—the core cognitive engine of the Afolabi Unified Framework (AUF) and the Heaven ASI. 
