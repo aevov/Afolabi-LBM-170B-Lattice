@@ -4,7 +4,7 @@
 >
 > https://github.com/aevov/Afolabi-LBM-170B-Lattice/blob/main/AUF_Architecture_Clarification_Paper.docx
 
-<video src="https://raw.githubusercontent.com/aevov/Afolabi-LBM-170B-Lattice/main/Physics-of-Intelligence%20model.mp4" controls="controls" max-width="100%">
+<video src="./Physics-of-Intelligence%20model.mp4" controls="controls" max-width="100%">
 </video>
 
 
