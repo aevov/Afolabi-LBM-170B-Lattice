@@ -8,6 +8,10 @@ Explainer video of the physics of intelligence:
 
 https://www.youtube.com/watch?v=hHBw4qrJS9I
 
+Enabled By Geometric Reasoning:
+
+https://github.com/aevov/Worlds-Only-Geometric-Reasoning-Protocol
+
 
 This is the root repository for the **Large Brain Model (LBM-170B)**—the core cognitive engine of the Afolabi Unified Framework (AUF) and the Heaven ASI. 
 
